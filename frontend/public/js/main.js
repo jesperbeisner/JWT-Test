@@ -50,7 +50,8 @@ usersButton.addEventListener('click', () => {
       return response.json();
     })
     .then(data => {
-      // TODO: Display users
+      // TODO: Display users and errors...
+      showInfo('Get users worked!');
       console.log(data);
     })
     .catch((error) => {
